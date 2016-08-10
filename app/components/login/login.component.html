@@ -1,0 +1,17 @@
+<md-card>
+    <form class="form-signin">
+        <md-card-title>Please SignIn</md-card-title>
+
+        <!--<label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>-->
+
+        <md-input id="inputEmail" type="email" ng-value="inputEmail" required autofocus placeholder="Email address" style="width: 100%"></md-input>
+        <md-input type="password" id="inputPassword" dividerColor="warn" placeholder="Password" required style="width: 100%"></md-input>
+        <div class="checkbox">
+            <md-checkbox [checked]="remember-me">
+                Remember me
+            </md-checkbox>
+        </div>
+        <md-card-content align="right"><button md-fab type="submit">Sign in</button></md-card-content>
+    </form>
+</md-card>
